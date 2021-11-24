@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navBar">
+        <h1>XIMBI Portfolio</h1>
+        <div class="navigationMenu">
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+          <div></div>
+        </div>
+      </nav>
+      <section class="heroSection">
+        <img class="profileImage" alt="Profile" src="./images/fn.gif" />
+        <div class="herosectionDetails">
+          <h1>XIMBI</h1>
+          <h3>Programmer at Python,HTML,CSS &amp; javascript Languages</h3>
+        </div>
+      </section>
+      <section class="aboutMe" id="aboutMe">
+        <h1>What I Do...</h1>
+        <p>
+          Hello Everyone! My name is Ximbi. I'm an student and a junior programmer on my free time. 
+          Basically I'm a Programmer at python language and I also have skills in HTML, CSS and
+          JAVASCRIPT. I like to do projects with other people but i prefer by myself.
+        </p>
+      </section>
+      <!-- PARTE DE SKILLS -->
+      <section class="skillsAndProjects">
+        <div class="skills" id="skills">
+          <h1 class="cardHeading">Skills</h1>
+          <img title="python" src="./images/python.jpeg"alt="python"/>
+          <img title="HTML" src="./images/html.svg" alt="HTML"/>
+          <img title="CSS" src="./images/css.svg" alt="CSS"/>
+          <img title="Javascript" src="./images/javascript-logo.svg" alt="Javascript"/>
+        </div>
+
+        <!-- PARTE DE PROYECTOS -->
+        <div class="projects" id="projects">
+          <h1 class="cardHeading">Projects</h1>
+          <div class="projectContainer">
+            <img src="./images/html.svg" alt="webpage" />
+            <div class="projectDescription">
+              <h4>webpage</h4>
+              <p>personal webpage using html,css and javascript.</p>
+            </div>
+          </div>
+          <div class="projectContainer">
+            <img src="./images/python.jpeg" alt="Python"/>
+            <div class="projectDescription">
+              <h4>Discord bots</h4>
+              <p>some discord bots created with friends.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactForm" id="contactForm">
+        <h1>Let's Connect!</h1>
+        <div class="formGroup">
+          <label for="name">Enter Full Name</label>
+          <br />
+          <input type="text" id="name" placeholder="Full Name" />
+        </div>
+        <div class="formGroup">
+          <label for="email">Email</label>
+          <br />
+          <input type="text" id="email" placeholder="Email" />
+        </div>
+        <div class="formGroup">
+          <label for="message">Message</label>
+          <br />
+          <textarea
+            placeholder="Send some message!"
+            id="message"
+            name="review"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+        <button class="submitButton" onclick="{submit()}">Connect</button>
+      </section>
+    </main>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

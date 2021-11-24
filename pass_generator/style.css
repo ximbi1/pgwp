@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+#container {
+    background-image: url("./images/lluvia.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <center>
+        <div class="container">
+                
+                <form>
+                    <div class="form-group">
+                      <label for="formControlRange">Password Length
+                      </label>
+                      <input type="range" min='6' max= "32" class="form-control-range" id="formControlRange">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input :checked" type="checkbox" value="" id="defaultCheck2" checked disabled>
+                        <label class="form-check-label" for="defaultCheck2">
+                          Small letters
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="capital-letters" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Capital letters
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="symbols" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Symbols
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Numbers" id="defaultCheck4">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Numbers
+                        </label>
+                      </div>
+                  </form>
+
+                  <button type="submit" class="btn btn-primary submit">Accept</button>
+                    
+              </div>
+
+              <div class="container showPassword">
+                  
+              </div>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
