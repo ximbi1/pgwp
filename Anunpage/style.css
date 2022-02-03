@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+* {
+	 box-sizing: border-box;
+}
+ html, body {
+	 font-family: 'Oooh Baby', cursive;
+	 background: #fff;
+	 padding: 80px 30px 30px;
+	 color: rgb(255, 255, 255);
+	 height: 100%;
+   background-image: url("fondazo.jpeg");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 32px;
+   scroll-behavior: smooth;
+
+}
+.copyright {
+  text-align: center;
+}
+ ol, ul {
+	 margin: 0 0 50px 0;
+}
+ h1, h2 {
+	 font-weight: bold;
+	 color: rgb(255, 255, 255);
+   font-size: 38px;
+}
+h3 {
+  color: rgba(255, 255, 255, 0);
+}
+ b {
+   color: deeppink;
+   font-weight: 3px;
+}
+ p {
+	 line-height: 1.6em;
+	 margin-bottom: 10px;
+	 font-size: 28px;
+	 padding: 0;
+   font-weight: 3px;
+}
+ p:last-child {
+	 margin-bottom: 40px;
+}
+ code {
+	 background: #1a111196;
+	 color: #d64f9b;
+	 border: 1px solid #1a1111a9;
+	 padding: 2px;
+	 border-radius: 3px;
+   
+}
+ a {
+	 font-weight: bold;
+	 color: deeppink;
+	 text-decoration: none;
+	 transition: all 200ms;
+}
+ a:hover, a:focus {
+	 color: black;
+}
+ article {
+	 min-height: 50vh;
+	 margin-bottom: 50px;
+}
+ article .margin {
+	 margin-bottom: 100vh;
+}
+ nav {
+	 display: flex;
+	 width: 100%;
+	 top: 0;
+	 left: 0;
+	 background: #303947;
+	 position: fixed;
+	 padding: 5px;
+}
+ nav a {
+	 display: inline-flex;
+	 padding: 20px 30px;
+	 color: #fff;
+	 text-decoration: none;
+}
+ nav a:hover, nav a:focus {
+	 color: deeppink;
+}
+ nav a.active {
+	 color: deeppink;
+}
+ 

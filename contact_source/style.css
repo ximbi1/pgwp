@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    background: url("./images/sdd.gif");
+    background: url("./images/loop.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -64,26 +64,6 @@ body {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .telegram:hover,
-.wrapper .telegram:hover .tooltip,
-.wrapper .telegram:hover .tooltip::before {
-    background-color: #0088cc;
-    color: #ffffff;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-    background-color: #de463b;
-    color: #ffffff;
-}
-
-.wrapper .linkedin:hover,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
-    background-color: #0e76a8;
-    color: #ffffff;
-}
 
 .wrapper .icon:hover .tooltip {
     top: -45px;

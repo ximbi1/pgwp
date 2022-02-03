@@ -16,11 +16,11 @@
 }
 
 .page:nth-child(1) {
-    background-image: url("../images/pano1.png");
+    background-image: url("../images/part111.png");
     background-size: cover;
 }
 
 .page:nth-child(2) {
-    background-image: url("../images/pano3.png");
+    background-image: url("../images/part222.png");
     background-size: cover;
 }

@@ -57,7 +57,7 @@ body::before {
 
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url(https://4kwallpapers.com/images/walls/thumbs_2t/900.jpg);
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/900.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

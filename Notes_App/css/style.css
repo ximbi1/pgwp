@@ -13,14 +13,14 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding-top: 3rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .add {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    background-color: #414634be;
+    background-color: #5bc3cc;
     backdrop-filter: blur(4px);
     border: none;
     border-radius: 3px;
@@ -30,7 +30,7 @@ body {
 }
 
 .note {
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: rgba(255, 255, 255, 0658.);
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
     margin: 30px 20px;
     height: 400px;
@@ -40,6 +40,7 @@ body {
 .note .tools {
     background-color: #1a3c9781;
     display: flex;
+    color:#fff;
     justify-content: flex-end;
     padding: 0.5rem;
 }

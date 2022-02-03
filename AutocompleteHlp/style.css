@@ -1,0 +1,41 @@
+body {
+    background-image: url("fada.gif");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'roboto';
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+  color: gainsboro;
+  font-size: 50px;
+}
+p {
+  color: ghostwhite;
+  font-weight: 20px;
+  font-size: 40px;
+}
+input {
+    width: 200px;
+}
+
+.div1 {
+backdrop-filter: blur(3px);
+background: linear-gradient(130deg,rgba(20, 4, 46, 0.329) 50%, rgba(131, 61, 189, 0.288)50%);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+margin: 0;
+overflow: hidden;
+font-family: 'roboto';
+backdrop-filter: blur(5px)
+}

@@ -1,112 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>XIMBI'S</title>
-    <link rel="shortcut icon" href="fn.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
 
+/*   objeto animado de fondo
+            var image = document.createElement('img');
+            image.src = 'wwwww.jpeg';
+            image.style.width = '150px';
+            image.style.height = '100px';
+            document.body.appendChild(image);
+            var x = 0;
+            var y = 0;
+            var dx = 1;
+            var dy = 1;
+            function move() {
+              x += dx;
+              y += dy;
+              if (x > window.innerWidth - 100) {
+                dx = -1;
+              }
+              if (x < 0) {
+              dx = 1;
+              }
+              if (y > window.innerHeight - 100) {
+              dy = -1;
+              }
+              if (y < 0) {
+              dy = 1;
+              }
+              image.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+              requestAnimationFrame(move);
+            }
+            requestAnimationFrame(move);
+*/
+
+            var clock = document.createElement('div');
+            clock.innerHTML = '<div id="clock"></div>';
+            document.body.appendChild(clock);
+            var clock = document.getElementById('clock');
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            var ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            var time = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+            clock.innerHTML = time;
+            setInterval(function() {
+              var date = new Date();
+              var hours = date.getHours();
+              var minutes = date.getMinutes();
+              var seconds = date.getSeconds();
+              var ampm = hours >= 12 ? 'PM' : 'AM';
+              hours = hours % 12;
+              hours = hours ? hours : 12; // the hour '0' should be '12'
+              minutes = minutes < 10 ? '0' + minutes : minutes;
+              seconds = seconds < 10 ? '0' + seconds : seconds;
+              var time = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+              clock.innerHTML = time;
+            }, 1000);
+
+            /* make it bigger */
+            var clock = document.getElementById('clock');
+            clock.style.fontSize = '30px';
+            clock.style.top ="50px";
+            clock.style.left= "50px";
+            clock.style.position = 'absolute';
+
+            /* make it brown color */
+            var clock = document.getElementById('clock');
+            clock.style.color = '#e09c69';
+            
+            var button = document.createElement('button');
+            button.innerHTML = 'ayuda?';
+            button.style.borderRadius = '50%';
+            button.style.width = '60px';
+            button.style.height = '60px';
+            button.style.backgroundColor = ' #e09c69 ';
+            button.style.position = 'absolute';
+            button.style.top = '50px';
+            button.style.left = '90%';
+            button.style.zIndex = '1';
+            button.style.cursor = 'pointer';
+            document.body.appendChild(button);
+
+            button.onclick = function() {
+            alert('invitado:invitado');
+            }
+
+            var loginForm = document.createElement('form');
+            loginForm.setAttribute('id', 'loginForm');
+            loginForm.setAttribute('class', 'column');
+            loginForm.setAttribute('style', 'position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);');
+            loginForm.innerHTML = '<center>' + 
+                '<h1>Login</h1>' +
+                '<input type="text" name="username" placeholder="Username" class="user">' +
+                '<br />' +
+                '<input type="password" name="password" placeholder="Password" class="pass">' +
+                '<br />' +
+                '<input type="submit" value="Login" class="log">';
+            document.body.appendChild(loginForm);
+
+            var loginData = {};
+
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                var username = document.getElementsByName('username')[0].value;
+                var password = document.getElementsByName('password')[0].value;
+                if (username === 'ximbi' && password === 'p1rul374') {
+                    window.location.href = './pageweb/index.html';
+                } 
+                else if(username === 'aragon' && password === 'samXD125') {
+                    window.location.href = './pageweb/index.html';
+                }
+                else if(username === 'amasu' && password === 'amasu') {
+                    window.location.href = './pageweb/index.html';
+                }
+                else if(username === 'invitado' && password === 'invitado') {
+                    window.location.href = './pageweb/index.html';
+                }
+                else {
+                    alert('Nah, si no tienes la clave... esto no es para ti :(!');
+                }
+            });
+        });
+    </script>
 </head>
 
-<body>
-    <nav>
-    <marquee>Esta pagina web esta en dessarrolo por Ximbi.</marquee>
-        <div class="logo" >XIMBI'S WORLD</div>
-
-        <label for="btn" class="icon">
-         <span class="fa fa-bars"></span>
-       </label>
-
-        <input type="checkbox" id="btn" />
-
-        <ul>
-            <li><a href="./index.html" class="animate__animated animate__slideInDown animate__delay-2s">INDEX</a></li>
-
-            <li>
-                <label for="btn-1" class="show">Features+</label>
-                <a href="#">FEATURES</a>
-                <input type="checkbox" id="btn-1" />
-                <ul>
-                    <li><a href="./Notes_App/index.html" target="_blank">NOTES</a></li>
-                    <li><a href="carta_preg_i_res/index.html" target="_blank">FLASHCARDS</a></li>
-                    <li><a href="./pass_generator/index.html" target="_blank">PASS_GEN</a></li>
-                    <li><a href="https://calendar.google.com/calendar/u/0/r" target="_blank">CALENDAR</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <label for="btn-2" class="show">Services+</label>
-                <a href="#">SERVICES</a>
-                <input type="checkbox" id="btn-2" />
-                <ul>
-                    <li><a href="https://bit.ly/3CjXV8b" target="_blank">GMAIL</a></li>
-                    <li><a href="https://drive.google.com/drive/my-drive" target="_blank">DRIVE</a></li>
-                    <li><a href="https://www.lavanguardia.com/" target="_blank">NEWS</a></li>
-                    <li>
-                        <label for="btn-3" class="show">More+</label>
-                        <a href="#">GAMES<span class="fa fa-plus"></span></a>
-                        <input type="checkbox" id="btn-3" />
-                        <ul>
-                            <li><a href="typing_game/index.html" target="_blank">TYPING_GME</a></li>
-                            <li><a href="./bubble_anim/index.html" target="_blank">BUBBLE_CLM</a></li>
-                            <li><a href="#">JUEGO 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-            <li><a href="./contact_source/index.html">CONTACT</a></li>
-            <li><a href="./portfolio/index.html">PROFILE</a></li>
-
-        </ul>
-
-    </nav>
-    <audio controls src="Beat.mp3" type "audio/mpeg">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    <center>
-        <section id="note">
-            <div class="main center">
-                <h1 class="animate__animated animate__bounceInDown animate__delay-2s">
-                    MY OWN HELPFUL PERSONAL WEBSITE
-                </h1>
-                
-            </div>
-            <div class="main center">
-                <h2 class="animate__animated animate__ animate__backInLeft animate__delay-3s">
-                    Esto es un ejemplo de las cosas que se pueden hacer con css
-                </h2>
-            </div>
-            <div class="main center">
-                <h3 class="animate__animated animate__ animate__backInRight animate__delay-4s">
-                    Esto te permite tunear tu pagina a tu gusto con efectos mas chulos.
-                </h3>
-            </div>
-
-        </section>
-    </center>
-    <!-- MENUS DE OPCIONES
-
-    <div id="textolat">
-        <h2>menu lateral</h2>
-        <p>
-            En este menu que esta en desarrollo iran los enlaces a painas importantes que ayuden a estuidar
-        </p>
-    </div>
-    <div id="textolat2">
-        <h2>menu movible</h2>
-        <p>
-            aixo ser un blockn de tasques movible
-        </p>
-    </div>
-    -->
-
+<body style="margin: 0;">
+    <style>
+        body {
+            background-image: url("fum.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0px;
+        }
+        h1 {
+          color:  #e09c69 ;
+          font-family:'Courer';
+          font-size: 70px;
+        }
+        .user {
+          margin: 10px 10px 10px 10px;
+          font-size:20px;
+        }
+        .pass {
+          margin: 10px 10px 10px 10px;
+          font-size:20px;
+        }
+        .log {
+          margin: auto;
+          background-color:  #e09c69 ;
+          font-size: 20px;
+        }
+    </style>
 </body>
 
 </html>
